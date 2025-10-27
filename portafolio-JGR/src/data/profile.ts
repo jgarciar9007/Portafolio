@@ -1,6 +1,6 @@
 // path: src/data/profile.ts
 export const profile = {
-name: "Jorge García Rodríguez",
+name: "Portafolio WEB - JGR",
 headline: "Consultor y Desarrollador · Microsoft/ERP · Python · Web",
 location: "Guinea Ecuatorial",
 email: "jgrdguez9007@gmail.com",

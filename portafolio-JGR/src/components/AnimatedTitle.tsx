@@ -1,7 +1,7 @@
 // Componente de título animado letra a letra usando Framer Motion.
 // Efecto: cada letra “cae” y se asienta con resorte. Al pasar el mouse, sube 2px.
 import { motion } from "framer-motion";
-
+import type { Variants } from "framer-motion";
 export function AnimatedTitle({ text }: { text: string }) {
   // Convertimos el texto en un array de caracteres para animarlos de forma independiente
   const letters = Array.from(text);
@@ -13,15 +13,19 @@ export function AnimatedTitle({ text }: { text: string }) {
   };
 
   // Variantes de cada letra: posición inicial arriba y leve rotación, cae con efecto resorte
-  const child = {
-    hidden: { opacity: 0, y: -20, rotate: -5 },
-    show: {
-      opacity: 1,
-      y: 0,
-      rotate: 0,
-      transition: { type: "spring", stiffness: 600, damping: 20 },
+const child: Variants = {
+  hidden: { opacity: 0, y: -20, rotate: -5 },
+  show: {
+    opacity: 1,
+    y: 0,
+    rotate: 0,
+    transition: {
+      type: "spring" as const, // tipo literal
+      stiffness: 600,
+      damping: 20,
     },
-  };
+  },
+};
 
   return (
     <motion.h1

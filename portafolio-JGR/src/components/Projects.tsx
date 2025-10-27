@@ -18,7 +18,7 @@ whileInView={{opacity:1, y:0}}
 viewport={{once:true, amount:0.4}}
 transition={{duration:0.35, delay: idx*0.05}}
 className="group rounded-2xl border bg-white p-5 hover:shadow-lg transition">
-<div className="aspect-video w-full rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 mb-3 grid place-items-center text-slate-400 text-sm">
+<div className="aspect-video w-full rounded-xl bg-linear-to-br from-slate-100 to-slate-50 mb-3 grid place-items-center text-slate-400 text-sm">
 preview
 </div>
 <h3 className="font-semibold text-slate-900 group-hover:text-emerald-700">{p.name}</h3>

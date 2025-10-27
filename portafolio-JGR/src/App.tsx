@@ -10,7 +10,7 @@ import { Footer } from './components/Footer'
 
 export default function App(){
 return (
-<div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800">
+<div className="min-h-screen bg-linear-to-b from-slate-50 to-white text-slate-800">
 <Header />
 <main className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 <Hero />

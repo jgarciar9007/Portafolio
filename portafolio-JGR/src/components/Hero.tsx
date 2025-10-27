@@ -11,11 +11,11 @@ import { AnimatedTitle } from "./AnimatedTitle";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden py-20 sm:py-24 px-4 sm:px-8">
+    <section className="relative isolate overflow-hidden py-6 sm:py-10 px-4 sm:px-8">
       {/* Fondo decorativo: blobs con máscara radial para un degradado suave */}
-      <div className="pointer-events-none absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(60%_60%_at_50%_20%,black,transparent)]">
-        <div className="absolute -top-24 -left-24 size-[28rem] rounded-full bg-emerald-200 blur-3xl" />
-        <div className="absolute -bottom-24 -right-24 size-[28rem] rounded-full bg-emerald-300 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 -z-10 opacity-40 mask-[radial-gradient(60%_60%_at_50%_20%,black,transparent)]">
+        <div className="absolute -top-24 -left-24 size-112 rounded-full bg-emerald-200 blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 size-112 rounded-full bg-emerald-300 blur-3xl" />
       </div>
 
       <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -71,10 +71,10 @@ export function Hero() {
         >
           <div className="relative">
             {/* Halo suave detrás del avatar */}
-            <div className="absolute -inset-3 -z-10 rounded-full bg-gradient-to-tr from-emerald-400 to-emerald-600 opacity-20 blur-2xl" />
+            <div className="absolute -inset-3 -z-10 rounded-full bg-linear-to-tr from-emerald-400 to-emerald-600 opacity-20 blur-2xl" />
             <img
               src="/Avatar-1.png"
-              alt="Jorge García"
+              alt="Jorge García Rodríguez"
               className="size-48 sm:size-56 rounded-full ring-4 ring-white shadow-lg object-cover"
             />
           </div>
